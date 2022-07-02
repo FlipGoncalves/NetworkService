@@ -1,0 +1,66 @@
+INTERNET
+> conf t
+(config)> ipv6 unicast-routing
+(config)> ip route 210.10.10.252 255.255.255.252 100.100.100.1
+(config)> int f0/0
+(config-if)> ipv6 enable
+(config-if)> no shut
+(config-if)> ip address 100.100.100.2 255.255.255.0
+(config-if)> ipv6 address 2001:2001:2001:2001::2/64
+(config-if)> end
+> write
+> 
+
+ISP:
+> conf t
+(config)> ipv6 unicast-routing
+(config)> int f0/0
+(config-if)> ipv6 enable
+(config-if)> no shut
+(config-if)> ip address 210.10.10.253 255.255.255.252
+(config-if)> ipv6 address 2001:A:A::253/64
+(config-if)> end
+> write
+> conf t
+(config)> int f1/0
+(config-if)> ipv6 enable
+(config-if)> no shut
+(config-if)> ip address 100.100.100.1 255.255.255.0
+(config-if)> ipv6 address 2001:2001:2001:2001::1/64
+(config-if)> end
+> write
+> 
+
+ROUTER1:
+> conf t
+(config)> ipv6 unicast-routing
+(config)> int f0/0
+(config-if)> ipv6 enable
+(config-if)> no shut
+(config-if)> ip address 210.10.10.254 255.255.255.252
+(config-if)> ipv6 address 2001:A:A::254/64
+(config-if)> end
+> write
+> conf t
+(config)> ip route 100.100.100.0 255.255.255.0 210.10.10.253
+(config)> end
+> write
+>
+
+ROUTER3:
+> conf t
+(config)> int f1/0
+(config-if)> no shut
+(config-if)> ip address 191.1.1.253 255.255.255.252
+(config-if)> end
+> write
+>
+
+ROUTER4:
+> conf t
+(config)> int f0/0
+(config-if)> no shut
+(config-if)> ip address 191.1.1.254 255.255.255.252
+(config-if)> end
+> write
+>

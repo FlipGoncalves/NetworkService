@@ -1,0 +1,28 @@
+Jan 08 15:02:01.457 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 08 15:02:01.458 HYPERVISOR: Started on IP = localhost, TCP port = 63686.
+Jan 08 15:02:01.966 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 08 15:02:01.967 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Filipe Gonçalves\Documents\GitHub\SluttyRouters\projeto_v2\project-files\dynamips 
+Jan 08 15:02:01.967 GENERAL: working_dir=C:\Users\Filipe Gonçalves\Documents\GitHub\SluttyRouters\projeto_v2\project-files\dynamips
+Jan 08 15:02:01.967 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Jan 08 15:02:10.146 HYPERVISOR: exec_cmd: nio create_udp udp-e2858cfb-3d51-4b92-8fc7-4381db43b89b 10064 127.0.0.1 10065 
+Jan 08 15:02:10.146 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-e2858cfb-3d51-4b92-8fc7-4381db43b89b 
+Jan 08 15:02:10.151 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-e2858cfb-3d51-4b92-8fc7-4381db43b89b 1 
+Jan 08 15:02:10.238 HYPERVISOR: exec_cmd: nio create_udp udp-2cae10ec-5054-4082-bce5-1c1f10ee2204 10068 127.0.0.1 10069 
+Jan 08 15:02:10.238 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-2cae10ec-5054-4082-bce5-1c1f10ee2204 
+Jan 08 15:02:10.243 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-2cae10ec-5054-4082-bce5-1c1f10ee2204 1 
+Jan 08 15:02:10.442 HYPERVISOR: exec_cmd: nio create_udp udp-1a8fb55e-d7fb-4dcd-8236-bb5119d42ce3 10074 127.0.0.1 10075 
+Jan 08 15:02:10.443 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-1a8fb55e-d7fb-4dcd-8236-bb5119d42ce3 
+Jan 08 15:02:10.458 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-1a8fb55e-d7fb-4dcd-8236-bb5119d42ce3 1 
+Jan 08 15:02:10.674 HYPERVISOR: exec_cmd: nio create_udp udp-c490738a-c675-4141-ba2f-4337594b7009 10078 127.0.0.1 10079 
+Jan 08 15:02:10.675 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-c490738a-c675-4141-ba2f-4337594b7009 
+Jan 08 15:02:10.677 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-c490738a-c675-4141-ba2f-4337594b7009 1 
+Jan 08 15:02:10.893 HYPERVISOR: exec_cmd: nio create_udp udp-a66393d3-93cf-4097-b287-860d46c482ec 10082 127.0.0.1 10083 
+Jan 08 15:02:10.893 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-a66393d3-93cf-4097-b287-860d46c482ec 
+Jan 08 15:02:10.925 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-a66393d3-93cf-4097-b287-860d46c482ec 1 
+Jan 08 15:02:11.112 HYPERVISOR: exec_cmd: nio create_udp udp-931311c0-0fe9-4b9c-8d4d-3aa9c7add6cd 10086 127.0.0.1 10087 
+Jan 08 15:02:11.113 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-931311c0-0fe9-4b9c-8d4d-3aa9c7add6cd 
+Jan 08 15:02:11.115 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-931311c0-0fe9-4b9c-8d4d-3aa9c7add6cd 1 
+Jan 08 15:08:30.075 HYPERVISOR: exec_cmd: ethsw delete Switch2 
+Jan 08 15:08:30.243 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 08 15:08:30.383 HYPERVISOR: Stopped.
+Jan 08 15:08:30.383 GENERAL: reset done.

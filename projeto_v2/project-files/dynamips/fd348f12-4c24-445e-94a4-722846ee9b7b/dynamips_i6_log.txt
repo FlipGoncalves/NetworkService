@@ -1,0 +1,10 @@
+Jan 08 15:18:33.062 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Jan 08 15:18:33.062 HYPERVISOR: Started on IP = localhost, TCP port = 53075.
+Jan 08 15:18:33.071 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 08 15:18:33.072 HYPERVISOR: exec_cmd: hypervisor working_dir /home/pedro-duarte/uni/rs/SluttyRouters/projeto_v2/project-files/dynamips 
+Jan 08 15:18:33.072 GENERAL: working_dir=/home/pedro-duarte/uni/rs/SluttyRouters/projeto_v2/project-files/dynamips
+Jan 08 15:18:33.072 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Jan 08 15:18:33.155 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Jan 08 15:18:33.156 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 08 15:18:33.571 HYPERVISOR: Stopped.
+Jan 08 15:18:33.571 GENERAL: reset done.
